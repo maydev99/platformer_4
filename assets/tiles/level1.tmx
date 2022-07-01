@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="24">
+ <tileset firstgid="1" source="Spritesheet.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="20" height="12">
+  <data encoding="base64">
+   BwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAYAAAAGAAAABgAAAAYAAAAGAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABgAAAAYAAAAGAAAABgAAAAYAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAGAAAABgAAAAYAAAAHAAAABwAAAAcAAAAGAAAABgAAAAYAAAAGAAAABgAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAYAAAAGAAAABgAAAAcAAAAHAAAABwAAAAYAAAAGAAAABgAAAAYAAAAGAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAAAABgAAAAYAAAAGAAAABwAAAAcAAAAHAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAA
+  </data>
+ </layer>
+ <objectgroup id="2" name="SpawnPoints" offsetx="0.740312" offsety="0.740312">
+  <object id="1" name="Player" x="32.5737" y="286.501" width="32" height="32">
+   <properties>
+    <property name="Type" value="Player"/>
+   </properties>
+  </object>
+  <object id="4" name="Coin" x="289.462" y="189.52" width="32" height="32">
+   <properties>
+    <property name="Type" value="Coin"/>
+   </properties>
+  </object>
+  <object id="5" name="Coin" x="350.168" y="191.001" width="32" height="32">
+   <properties>
+    <property name="Type" value="Coin"/>
+   </properties>
+  </object>
+  <object id="6" class="Coin" x="415.315" y="285.761" width="32" height="32">
+   <properties>
+    <property name="Type" value="Coin"/>
+   </properties>
+  </object>
+  <object id="7" name="Coin" x="510.075" y="125.853" width="32" height="32">
+   <properties>
+    <property name="Type" value="Coin"/>
+   </properties>
+  </object>
+  <object id="8" name="Door" x="573.742" y="94.0197" width="64" height="64">
+   <properties>
+    <property name="Type" value="Door"/>
+   </properties>
+  </object>
+  <object id="9" gid="1" x="31.38" y="318.788" width="32" height="32"/>
+  <object id="10" gid="4" x="289.749" y="221.067" width="32" height="32"/>
+  <object id="11" gid="4" x="350.455" y="224.028" width="32" height="32"/>
+  <object id="12" name="Coin" gid="4" x="414.862" y="318.788" width="32" height="32"/>
+  <object id="13" gid="4" x="509.622" y="158.14" width="32" height="32"/>
+  <object id="14" gid="3" x="573.658" y="158.534" width="64" height="64" rotation="0.499568"/>
+  <object id="16" x="-0.740312" y="319.075" width="640.37" height="64.4072"/>
+  <object id="17" x="290.202" y="225.055" width="91.7987" height="94.0197"/>
+  <object id="18" x="480.463" y="160.648" width="159.167" height="159.167"/>
+  <object id="19" x="757.34" y="52.5622"/>
+  <object id="20" x="-101.423" y="762.522" width="85.1359" height="9.62406"/>
+ </objectgroup>
+ <objectgroup id="3" name="Platforms">
+  <object id="21" x="0" y="321.296" width="640.37" height="61.4459"/>
+  <object id="22" x="290.943" y="225.055" width="91.0584" height="96.2406"/>
+  <object id="23" x="479.722" y="162.869" width="161.388" height="156.946"/>
+ </objectgroup>
+</map>
