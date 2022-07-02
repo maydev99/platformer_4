@@ -1,5 +1,4 @@
 import 'package:flame/components.dart';
-import 'package:flame/game.dart';
 import 'package:layout/game/game.dart';
 
 class Hud extends Component with HasGameRef<SimplePlatformer> {

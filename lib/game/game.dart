@@ -3,7 +3,6 @@ import 'dart:ui';
 import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flame/input.dart';
-import 'package:flame_tiled/flame_tiled.dart';
 import 'package:layout/game/level/level.dart';
 import 'package:layout/game/model/player_data.dart';
 import 'package:layout/hud/hud.dart';
