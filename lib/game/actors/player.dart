@@ -115,4 +115,9 @@ class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler {
     add(OpacityEffect.fadeOut(
         EffectController(alternate: true, duration: 0.1, repeatCount: 5)));
   }
+
+  void jump() {
+    _jumpInput = true;
+    _isOnGround = true;
+  }
 }

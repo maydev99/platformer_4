@@ -8,7 +8,10 @@ import 'package:flame/image_composition.dart';
 import 'package:layout/game/actors/player.dart';
 import 'package:layout/game/game.dart';
 
-class Enemy extends SpriteComponent with CollisionCallbacks, HasGameRef<SimplePlatformer>{
+class Enemy extends SpriteComponent
+    with CollisionCallbacks, HasGameRef<SimplePlatformer> {
+
+  static final Vector2 _up = Vector2(0, -1);
   Enemy(
     Image image, {
     Vector2? srcPosition,
@@ -40,9 +43,13 @@ class Enemy extends SpriteComponent with CollisionCallbacks, HasGameRef<SimplePl
       final effect = SequenceEffect(
         [
           MoveToEffect(targerPosition, EffectController(speed: 100),
-          )..onComplete = () => flipHorizontallyAroundCenter(),
-          MoveToEffect(position + Vector2(32,0), EffectController(speed: 100),
-          )..onComplete = () => flipHorizontallyAroundCenter(),
+              onComplete: () {
+            flipHorizontallyAroundCenter();
+          }),
+          MoveToEffect(position + Vector2(32, 0), EffectController(speed: 100),
+              onComplete: () {
+            flipHorizontallyAroundCenter();
+          })
         ],
         infinite: true,
       );
@@ -50,6 +57,7 @@ class Enemy extends SpriteComponent with CollisionCallbacks, HasGameRef<SimplePl
       add(effect);
     }
   }
+
   @override
   Future<void>? onLoad() {
     add(CircleHitbox()..collisionType = CollisionType.passive);
@@ -57,11 +65,24 @@ class Enemy extends SpriteComponent with CollisionCallbacks, HasGameRef<SimplePl
   }
 
   @override
-  void onCollisionStart(Set<Vector2> intersectionPoints, PositionComponent other) {
-    if(other is Player) {
-      other.hit();
-      if(gameRef.playerData.health.value > 0) {
-        gameRef.playerData.health.value -= 1;
+  void onCollisionStart(
+      Set<Vector2> intersectionPoints, PositionComponent other) {
+    if (other is Player) {
+      final playerDir = (other.absoluteCenter - absoluteCenter).normalized();
+
+      if(playerDir.dot(_up) > 0.85) {
+          add(
+            OpacityEffect.fadeOut(
+              LinearEffectController(0.2),
+              onComplete: () => removeFromParent(),
+            ),
+          );
+          other.jump();
+      } else {
+        other.hit();
+        if (gameRef.playerData.health.value > 0) {
+          gameRef.playerData.health.value -= 1;
+        }
       }
 
 

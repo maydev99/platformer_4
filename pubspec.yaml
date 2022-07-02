@@ -12,6 +12,7 @@ dependencies:
   # import 'package:logger/logger.dart';
   flame: any
   flame_tiled: 1.5.0
+  tiled: any
 
 
   flutter:
