@@ -1,5 +1,6 @@
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
+import 'package:flame/effects.dart';
 import 'package:flame/image_composition.dart';
 import 'package:flutter/services.dart';
 import 'package:layout/game/actors/platform.dart';
@@ -108,5 +109,10 @@ class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler {
       }
     }
     super.onCollision(intersectionPoints, other);
+  }
+
+  void hit() {
+    add(OpacityEffect.fadeOut(
+        EffectController(alternate: true, duration: 0.1, repeatCount: 5)));
   }
 }

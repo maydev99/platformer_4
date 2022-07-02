@@ -5,8 +5,9 @@ import 'package:flame/image_composition.dart';
 import 'package:flutter/animation.dart';
 
 import 'package:layout/game/actors/player.dart';
+import 'package:layout/game/game.dart';
 
-class Coin extends SpriteComponent with CollisionCallbacks{
+class Coin extends SpriteComponent with CollisionCallbacks, HasGameRef<SimplePlatformer>{
   Coin(
       Image image, {
         Vector2? srcPosition,
@@ -48,12 +49,14 @@ class Coin extends SpriteComponent with CollisionCallbacks{
   @override
   void onCollisionStart(Set<Vector2> intersectionPoints, PositionComponent other) {
     if(other is Player) {
-
-      //add(RemoveEffect());
       add(OpacityEffect.fadeOut(LinearEffectController(0.3),
       )..onComplete = () {
         add(RemoveEffect());
       });
+
+      gameRef.playerData.score.value += 1;
+
+
     }
     super.onCollisionStart(intersectionPoints, other);
   }

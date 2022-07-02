@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="29">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="30" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="33">
  <tileset firstgid="1" source="Spritesheet.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="12">
   <data encoding="base64">
@@ -30,7 +30,21 @@
     <property name="NextLevel" value="level1.tmx"/>
    </properties>
   </object>
-  <object id="21" name="Enemy" gid="2" x="477.333" y="161.556" width="32" height="32"/>
-  <object id="22" name="Enemy" gid="2" x="125.111" y="320.444" width="32" height="32"/>
+  <object id="21" name="Enemy" gid="2" x="477.333" y="161.556" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="30"/>
+   </properties>
+  </object>
+  <object id="22" name="Enemy" gid="2" x="125.111" y="320.444" width="32" height="32">
+   <properties>
+    <property name="Target" type="object" value="29"/>
+   </properties>
+  </object>
+  <object id="29" x="546.667" y="290">
+   <point/>
+  </object>
+  <object id="30" x="673.333" y="124.444">
+   <point/>
+  </object>
  </objectgroup>
 </map>
