@@ -46,7 +46,7 @@ class Player extends SpriteComponent with CollisionCallbacks, KeyboardHandler {
 
   @override
   Future<void>? onLoad() {
-    debugMode = true;
+    //debugMode = true;
     add(CircleHitbox());
     return super.onLoad();
   }
