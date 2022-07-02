@@ -9,7 +9,7 @@
  <objectgroup id="3" name="Platforms">
   <object id="23" x="162.222" y="3.33333" width="27.7778" height="251.111"/>
   <object id="24" x="2.22222" y="195.556" width="58.8889" height="188.889"/>
-  <object id="25" x="63.3333" y="321.111" width="895.556" height="63.3333"/>
+  <object id="25" x="65.5556" y="323.333" width="895.556" height="63.3333"/>
   <object id="26" x="354.444" y="162.222" width="223.333" height="63.3333"/>
   <object id="28" x="578.889" y="162.222" width="125.556" height="156.667"/>
  </objectgroup>

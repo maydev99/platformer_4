@@ -11,7 +11,7 @@ dependencies:
   logger: any
   # import 'package:logger/logger.dart';
   flame: any
-  flame_tiled: 1.0.0
+  flame_tiled: 1.5.0
 
 
   flutter:

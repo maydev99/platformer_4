@@ -7,7 +7,7 @@
   </data>
  </layer>
  <objectgroup id="2" name="SpawnPoints" offsetx="0.740312" offsety="0.740312">
-  <object id="1" name="Player" x="32.5737" y="286.501" width="32" height="32">
+  <object id="1" name="Player" x="32.5737" y="94.0197" width="32" height="32">
    <properties>
     <property name="Type" value="Player"/>
    </properties>
@@ -37,7 +37,7 @@
     <property name="Type" value="Door"/>
    </properties>
   </object>
-  <object id="9" gid="1" x="31.38" y="318.788" width="32" height="32"/>
+  <object id="9" gid="1" x="32.1203" y="126.307" width="32" height="32"/>
   <object id="10" gid="4" x="289.749" y="221.067" width="32" height="32"/>
   <object id="11" gid="4" x="350.455" y="224.028" width="32" height="32"/>
   <object id="12" name="Coin" gid="4" x="414.862" y="318.788" width="32" height="32"/>
