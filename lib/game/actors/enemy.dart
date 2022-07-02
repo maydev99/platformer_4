@@ -74,6 +74,7 @@ class Enemy extends SpriteComponent
               onComplete: () => removeFromParent(),
             ),
           );
+          gameRef.playerData.health.value += 1;
           other.jump();
       } else {
         other.hit();
