@@ -14,66 +14,23 @@
   <object id="28" x="578.889" y="162.222" width="125.556" height="156.667"/>
  </objectgroup>
  <objectgroup id="2" name="SpawnPoints">
-  <object id="1" name="Player" class="Player" x="25.5408" y="155.466" width="32" height="32">
-   <properties>
-    <property name="Type" value="Player"/>
-   </properties>
-  </object>
-  <object id="2" class="Coin" x="224.315" y="287.611" width="32" height="32">
-   <properties>
-    <property name="Type" value="Coin"/>
-   </properties>
-  </object>
-  <object id="3" class="Coin" x="322.036" y="285.39" width="32" height="32">
-   <properties>
-    <property name="Type" value="Coin"/>
-   </properties>
-  </object>
-  <object id="4" name="Coin" x="410.873" y="124.372" width="32" height="32">
-   <properties>
-    <property name="Type" value="Coin"/>
-   </properties>
-  </object>
-  <object id="5" name="Coin" x="672.944" y="124.372" width="32" height="32">
-   <properties>
-    <property name="Type" value="Coin"/>
-   </properties>
-  </object>
-  <object id="6" name="Coin" x="764.002" y="98.8317" width="32" height="32">
-   <properties>
-    <property name="Type" value="Coin"/>
-   </properties>
-  </object>
-  <object id="7" name="Coin" x="801.758" y="286.501" width="32" height="32">
-   <properties>
-    <property name="Type" value="Coin"/>
-   </properties>
-  </object>
-  <object id="8" name="Door" x="897.259" y="254.297" width="64" height="64">
-   <properties>
-    <property name="Type" value="Door"/>
-   </properties>
-  </object>
+  <properties>
+   <property name="NextLevel" value="level2.tmx"/>
+  </properties>
   <object id="9" x="729.578" y="523.031"/>
-  <object id="10" gid="1" x="25.0873" y="187.012" width="32" height="32"/>
-  <object id="11" name="Coin" gid="4" x="222.751" y="320.268" width="32" height="32"/>
-  <object id="12" name="Coin" gid="4" x="322.693" y="318.047" width="32" height="32"/>
-  <object id="13" gid="4" x="410.42" y="158.14" width="32" height="32"/>
-  <object id="14" gid="4" x="673.601" y="155.919" width="32" height="32"/>
-  <object id="15" gid="4" x="762.438" y="131.489" width="32" height="32"/>
-  <object id="16" gid="4" x="801.305" y="319.158" width="32" height="32"/>
-  <object id="17" name="Door" gid="3" x="895.693" y="318.049" width="64" height="64"/>
-  <object id="19" name="Enemy" class="Enemy" x="97.718" y="286.496" width="32" height="32">
+  <object id="10" name="Player" gid="1" x="29.5318" y="191.457" width="32" height="32"/>
+  <object id="11" name="Coin" gid="4" x="258.306" y="319.157" width="32" height="32"/>
+  <object id="12" name="Coin" gid="4" x="390.471" y="321.381" width="32" height="32"/>
+  <object id="13" name="Coin" gid="4" x="384.864" y="161.473" width="32" height="32"/>
+  <object id="14" name="Coin" gid="4" x="668.045" y="162.586" width="32" height="32"/>
+  <object id="15" name="Coin" gid="4" x="794.661" y="320.378" width="32" height="32"/>
+  <object id="16" name="Coin" gid="4" x="740.194" y="193.602" width="32" height="32"/>
+  <object id="17" name="Door" gid="3" x="896.804" y="318.049" width="64" height="64">
    <properties>
-    <property name="Type" value="Enemy"/>
+    <property name="NextLevel" value="level1.tmx"/>
    </properties>
   </object>
-  <object id="20" name="Enemy" class="Enemy" x="539.94" y="125.385" width="32" height="32">
-   <properties>
-    <property name="Type" value="Enemy"/>
-   </properties>
-  </object>
-  <object id="21" gid="2" x="541.778" y="157.111" width="32" height="32"/>
-  <object id="22" gid="2" x="97.3333" y="318.222" width="32" height="32"/>
+  <object id="21" name="Enemy" gid="2" x="477.333" y="161.556" width="32" height="32"/>
+  <object id="22" name="Enemy" gid="2" x="125.111" y="320.444" width="32" height="32"/>
  </objectgroup>
 </map>
